@@ -1,6 +1,6 @@
 /* Get elements */
-var cookiebtn = document.getElementByID("CookieBtn");
-var cookiedisplay = document.getElementByID("CookieDisplay");
+var cookiebtn = document.getElementById("CookieBtn");
+var cookiedisplay = document.getElementById("CookieDisplay");
 
 /* Set variables */
 var clicks = 0;
