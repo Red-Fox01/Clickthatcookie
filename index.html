@@ -1,17 +1,22 @@
-<html>
-        <body>
-        
-                <h1>Cookie clicker in html</h1>
-                <h3>Created by Griphcode and OXMC</h3>
-                <p>This Html Cookie clicker game will be updated very often </p>
-                <img src = "assets/cookie.png" id = "cookie" style = "width: 150px" onclick = "increment()">
-                <p>Clicks: <span id = "counter">0</span> </p>
-        </body>
-        <script>
-                var clicks = 0;
-                function increment(){
-                         clicks = clicks + 1;
-                         counter.innerHTML = clicks;
-                }
-        </script>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="./assets/cookie.png" rel="shortcut icon" type="image/gif" />
+  <meta name="title" content="Html Cookie clicker">
+  <meta name="description" content="Cookie clicker in simple html and js code, open-source on github!">
+  <meta name="keywords" content="cookie, clicker, oxmc, html, cookie, Griphcode.">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta property="og:image" content="meta.png">
+  <!-- Main game script -->
+  <script src="./js/cookie.js"></script>
+  <!-- Title -->
+  <title></title>
+<body>
+  <h1>Cookie clicker in html</h1>
+  <h3>Created by Griphcode and oxmc</h3>
+  <p>This Html Cookie clicker game will be updated very often</p>
+  <img src = "./assets/cookie.png" id="cookie" style="width: 150px">
+  <p>Clicks: <span id="counter">0</span></p>
+</body>
 </html>
