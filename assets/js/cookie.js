@@ -51,6 +51,6 @@ function addCookie(amount) {
 checkCookie("saved");
  
 /* Main game */
-CookieBtn.addEventListener("click", () => {
+cookiebtn.addEventListener("click", () => {
   addCookie("1");
 });
