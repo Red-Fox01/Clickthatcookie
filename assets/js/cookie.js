@@ -48,7 +48,7 @@ function addCookie(amount) {
 }
 
 /* Check if cookies have been clicked before */
-(checkCookie("saved");
+checkCookie("saved");
  
 /* Main game */
 CookieBtn.addEventListener("click", () => {
