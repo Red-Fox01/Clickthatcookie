@@ -44,7 +44,7 @@ function checkCookie(input) {
 
 function addCookie(amount) {
   cookies = cookies + amount;
-  counter.innerHTML = cookies;
+  cookiedisplay.innerHTML = cookies;
 }
 
 /* Check if cookies have been clicked before */
