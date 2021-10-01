@@ -1,22 +1,66 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <link href="./assets/cookie.png" rel="shortcut icon" type="image/gif" />
+  <!-- META info -->
+  <link href="./assets/img/cookie.png" rel="shortcut icon" type="image/gif" />
+  <link href="./assets/css/main.css" rel="stylesheet" />
   <meta name="title" content="Html Cookie clicker">
-  <meta name="description" content="Cookie clicker in simple html and js code, open-source on github!">
-  <meta name="keywords" content="cookie, clicker, oxmc, html, cookie, Griphcode.">
+  <meta name="description" content="Cookie clicker in simple html and js, open-source on github!">
+  <meta name="link" content="Cookie clicker in simple html and js, open-source on github!">
+  <meta name="keywords" content="cookie, clicker, oxmc, Griphcode, cookie, html.">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  <meta property="og:image" content="meta.png">
-  <!-- Main game script -->
-  <script src="./assets/js/cookie.js"></script>
+  <meta property="og:image" content="./assets/img/meta.png">
   <!-- Title -->
-  <title></title>
+  <title>Click That Cookie!</title>
+  <!-- Detect for cheats -->
+  <script src="./assets/js/detect-devtools.js"></script>
+  <script src="./assets/js/cheat.js"></script>
 <body>
-  <h1>Cookie clicker in html</h1>
-  <h3>Created by Griphcode and oxmc</h3>
-  <p>This Html Cookie clicker game will be updated very often</p>
-  <img src = "./assets/cookie.png" id="CookieBtn" style="width: 150px">
-  <p>Clicks: <span id="CookieDisplay">0</span></p>
+  <!-- Loading animation -->
+  <div class='loader'>
+    <center>
+      <img src="./assets/img/cookie.png" class="rotate" style="width: 150px">
+      <p id="LoadingText" style="color: black;">Loading...</p>
+    </center>
+  </div>
+  <script>
+    var Loadingtext = document.getElementById("LoadingText");
+    window.addEventListener('load', function () {
+      Loadingtext.innerHTML = "Loading Complete!"
+      const loader = document.querySelector('.loader');
+      loader.className += ' hidden';
+    });
+  </script>
+  <div class="titlebar">
+    <div class="app-icon"></div>
+    <div class="tooltip">
+      <button class="titlebarbutton" id="AboutBtn">
+        <img src="./assets/img/about.png" />
+      </button>
+      <span class="tooltiptext">About</span>
+    </div>
+    <div class="title">
+      <h1>Click That Cookie!</h1>
+    </div>
+  </div>
+  <div style="display: none;" id="AboutDiv" class="tooltip">
+    <div class="AboutDiv">
+      <h1>Click That Cookie!</h1>
+      <h3>Created by Griphcode and oxmc</h3>
+      <p>This Html Cookie clicker game will be updated very often</p>
+    </div>
+  </div>
+  <div class="a">
+    <center>
+      <img src="./assets/img/cookie.png" id="CookieBtn" class="rotate" style="width: 150px">
+      <p>Clicks: <span id="CookieDisplay"></span></p>
+    </center>
+  </div>
 </body>
+<!-- Main game script -->
+<script src="./assets/js/cookie.js"></script>
+<!-- Buttons script -->
+<script src="./assets/js/buttons.js"></script>
 </html>
