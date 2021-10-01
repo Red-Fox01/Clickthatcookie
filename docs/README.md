@@ -5,4 +5,4 @@ Please notice that this game is a fan game, not a copy!
 
 To play the game, go here:
 
-https://griphcode.github.io/Html-Cookie-clicker/
+https://griphcode.github.io/Clickthatcookie/
