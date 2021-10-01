@@ -1,5 +1,5 @@
 # Cookie Clicker
-Please Be sure to give feedback of what can fix or improve!
+Please Be sure to give feedback of what we can fix or improve!
 
 Please notice that this game is a fan game, not a copy!
 
